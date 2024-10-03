@@ -116,9 +116,10 @@ button {
 }
 
 .button:hover {
-    background-color: #ff8500; /* Button hover color */
+    background-color: lightgreen; /* Lighter green on hover */
     transform: scale(1.1);
 }
+
 
 .cta {
     text-align: center;
