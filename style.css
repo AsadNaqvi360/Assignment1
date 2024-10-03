@@ -81,7 +81,10 @@ main p {
 /* Footer styles */
 footer {
     width: 100%;
-    background-color: #333;
+    background-image: url('Forest.png'); /* Background image for the footer */
+    background-size: cover; /* Cover the entire footer area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
     color: white;
     text-align: center;
     padding: 10px;
