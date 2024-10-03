@@ -11,12 +11,6 @@ body {
     background-color: #f0f0f0; /* Light grey for clean look */
     color: #333; /* Dark grey text for readability */
     font-family: Arial, sans-serif;
-    opacity: 0; /* Initial opacity for fade effect */
-    transition: opacity 0.5s ease-in-out; /* Fade transition */
-}
-
-body.loaded {
-    opacity: 1; /* Full opacity when loaded */
 }
 
 html {
@@ -35,7 +29,10 @@ main {
 /* Align the header to full width */
 header {
     width: 100%;
-    background-color: #333;
+    background-image: url('Forest.png'); /* Background image for the header */
+    background-size: cover; /* Cover the entire header area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
     color: white;
     padding: 10px 0;
     position: fixed;
@@ -252,4 +249,14 @@ button:hover {
     form {
         width: 90%; /* Full width on small screens */
     }
+}
+
+/* Fade in animation */
+.fade {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade.show {
+    opacity: 1;
 }
