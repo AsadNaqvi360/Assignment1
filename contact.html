@@ -5,8 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        body.loaded {
+            opacity: 1;
+        }
+    </style>
 </head>
-<body>
+<body class="fade-in">
     <header>
         <nav>
             <ul>
@@ -40,7 +49,9 @@
         <p>© 2024 My Portfolio - Contact: asad.naqvi@ontariotechu.net</p>
     </footer>
     <script>
-        // Optional: Add any additional JavaScript for form handling if needed
+        window.onload = function() {
+            document.body.classList.add('loaded');
+        };
     </script>
 </body>
 </html>
