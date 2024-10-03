@@ -16,3 +16,23 @@
         font-size: 18px;
     }
 }
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack menu items vertically on smaller screens */
+        padding: 0;
+    }
+
+    .project-gallery {
+        flex-direction: column; /* Stack project cards vertically on smaller screens */
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    main {
+        padding: 40px 10px;
+    }
+}
+
