@@ -23,6 +23,7 @@ main {
     padding: 60px 20px; /* Keep padding for main content */
     max-width: 100%; /* Prevent overflow */
     box-sizing: border-box;
+    min-height: calc(100vh - 160px); /* Adjust for the height of header and footer */
 }
 
 /* Align the header to full width */
@@ -81,7 +82,8 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    position: relative; /* Ensure footer is part of the document flow */
+    position: relative; /* Change to relative */
+    margin-top: 20px;
 }
 
 /* Form and button styling */
@@ -119,7 +121,6 @@ button {
     background-color: lightgreen; /* Lighter green on hover */
     transform: scale(1.1);
 }
-
 
 .cta {
     text-align: center;
@@ -185,4 +186,92 @@ section.featured h2 {
     margin-top: 10px;
     color: #555;
     font-size: 1.1em;
+}
+
+/* Contact Page Styles */
+main {
+    padding: 60px 20px;
+    background-color: #f0f0f0; /* Light grey for clean look */
+    color: #333; /* Dark grey text for readability */
+    max-width: 600px; /* Limit width for better readability */
+    margin: auto; /* Center main content */
+}
+
+h1 {
+    font-size: 3em;
+    color: #4a9a44; /* Dark green */
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+}
+
+p {
+    font-size: 1.2em;
+    color: #666;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in;
+}
+
+/* Form Styles */
+form {
+    background-color: #e8f5e9; /* Very light green */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease-in;
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    color: #333; /* Dark grey for labels */
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 4px;
+    transition: border 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #4a9a44; /* Dark green on focus */
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4a9a44; /* Dark green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #388e3c; /* Lighter green on hover */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
