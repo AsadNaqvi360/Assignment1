@@ -7,26 +7,43 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #333; /* Dark background color */
     color: white;
-    padding: 10px;
+    padding: 10px 20px; /* Add some padding for better spacing */
+    position: fixed; /* Fix the header at the top of the page */
+    top: 0;
+    width: 100%; /* Make it span across the top */
+    z-index: 1000; /* Ensure the header stays above other content */
 }
 
+/* Updated Header Styles */
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex; /* Horizontally align the nav items */
+    justify-content: space-around; /* Evenly distribute them */
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    display: inline-block;
 }
 
 nav ul li a {
-    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #555; /* Button background */
+    color: white; /* White text */
     text-decoration: none;
+    border-radius: 5px; /* Rounded corners for buttons */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Animation */
 }
+
+nav ul li a:hover {
+    background-color: #ff6600; /* Change color on hover */
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+}
+
 
 main {
     padding: 20px;
