@@ -47,7 +47,7 @@ nav ul li a:hover {
 
 
 main {
-    padding: 20px;
+    padding: 60px 20px; /* 60px of top padding to push content below the fixed header */
 }
 
 footer {
