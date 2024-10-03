@@ -1,10 +1,13 @@
   /* Add gradient to the body */
-body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #f0f0f0, #e0e0e0); /* Light gradient background */
-    margin: 0;
-    padding: 0;
-    height: 100vh; /* Make sure the background covers the full viewport height */
+  body, html {
+    height: 100%;
+    background: linear-gradient(to bottom, #e0e0e0, #f0f0f0);
+
+}
+
+main {
+    min-height: calc(100vh - 160px); /* Adjust for the height of the header and footer */
+    padding: 60px 20px; /* Keep the padding for the main content */
 }
 
 
@@ -56,28 +59,23 @@ main {
 /* Style the welcome message on the home page */
 main h1 {
     font-size: 3em;
-    color: #333;
-    text-align: center;
-    margin-top: 100px; /* Adjust based on how much space you want */
+    color: #222; /* Darker text color */
 }
 
 main p {
     font-size: 1.2em;
-    text-align: center;
-    margin: 20px auto;
-    width: 70%; /* Adjust the width to avoid too wide text */
-    color: #555;
+    color: #666;
 }
 
 
 footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     background-color: #333;
     color: white;
     text-align: center;
     padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
 
 form label {
@@ -102,24 +100,67 @@ button {
 
 /* Style the Call to Action button */
 .button {
-    display: inline-block;
     background-color: #ff6600;
     color: white;
     padding: 15px 30px;
-    margin-top: 20px;
-    text-decoration: none;
-    font-size: 1.2em;
     border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+    margin-top: 20px;
 }
 
 .button:hover {
     background-color: #ff8500;
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 .cta {
     text-align: center;
     margin-top: 30px;
+}
+
+section.about-me {
+    padding: 40px 20px; /* Padding for spacing around the section */
+    background-color: #fff; /* White background */
+    text-align: center; /* Center the text */
+}
+
+section.about-me h2 {
+    font-size: 2.5em; /* Make the heading larger */
+    margin-bottom: 10px;
+}
+
+section.about-me p {
+    font-size: 1.1em; /* Increase the paragraph text size slightly */
+    color: #555; /* Dark gray color for better readability */
+}
+
+/* Style the featured projects section */
+section.featured {
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Light background to differentiate from other sections */
+    text-align: center;
+}
+
+.project-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between project cards */
+    margin-top: 20px;
+}
+
+.project {
+    max-width: 300px;
+    text-align: center;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project p {
+    margin-top: 10px;
+    color: #555;
+    font-size: 1.1em;
 }
 
