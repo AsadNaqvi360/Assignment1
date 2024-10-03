@@ -75,7 +75,7 @@ main p {
     color: #666;
 }
 
-/* Remove absolute positioning from footer */
+/* Footer styles */
 footer {
     width: 100%;
     background-color: #333;
@@ -101,7 +101,7 @@ form input, form textarea {
 button {
     margin-top: 10px;
     padding: 10px;
-    background-color: #333;
+    background-color: green; /* Action button color */
     color: white;
     border: none;
     cursor: pointer;
@@ -188,90 +188,62 @@ section.featured h2 {
     font-size: 1.1em;
 }
 
-/* Contact Page Styles */
+/* Contact Me Page Styles */
 main {
     padding: 60px 20px;
-    background-color: #f0f0f0; /* Light grey for clean look */
-    color: #333; /* Dark grey text for readability */
-    max-width: 600px; /* Limit width for better readability */
-    margin: auto; /* Center main content */
+    background-color: #f0f0f0; /* Background color for the main content */
 }
 
-h1 {
-    font-size: 3em;
-    color: #4a9a44; /* Dark green */
-    text-align: center;
-    animation: fadeIn 1s ease-in;
-}
-
-p {
-    font-size: 1.2em;
-    color: #666;
-    text-align: center;
-    animation: fadeIn 1.5s ease-in;
-}
-
-/* Form Styles */
+/* Form styling */
 form {
-    background-color: #e8f5e9; /* Very light green */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    animation: slideIn 1s ease-in;
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px; /* Max width for the form */
+    margin: 0 auto; /* Center the form */
+    background-color: #fff; /* White background for the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px; /* Padding inside the form */
 }
 
 form label {
-    display: block;
-    margin-top: 10px;
-    color: #333; /* Dark grey for labels */
+    margin-top: 10px; /* Space above each label */
+    font-weight: bold; /* Bold labels */
 }
 
 form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ddd; /* Light border */
-    border-radius: 4px;
-    transition: border 0.3s ease;
+    margin-top: 5px; /* Space above input fields */
+    padding: 10px; /* Padding inside input fields */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1em; /* Font size for readability */
+    transition: border-color 0.3s; /* Transition for border color on focus */
 }
 
 form input:focus, form textarea:focus {
-    border-color: #4a9a44; /* Dark green on focus */
+    border-color: green; /* Change border color to green on focus */
+    outline: none; /* Remove outline */
 }
 
 button {
-    margin-top: 10px;
+    margin-top: 20px; /* Space above buttons */
     padding: 10px;
-    background-color: #4a9a44; /* Dark green */
+    background-color: green; /* Button color */
     color: white;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Transition for hover effect */
 }
 
 button:hover {
-    background-color: #388e3c; /* Lighter green on hover */
+    background-color: lightgreen; /* Light green on hover */
 }
 
-/* Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes slideIn {
-    from {
-        transform: translateY(-20px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
+/* Responsive styling */
+@media (max-width: 600px) {
+    form {
+        width: 90%; /* Full width on small screens */
     }
 }

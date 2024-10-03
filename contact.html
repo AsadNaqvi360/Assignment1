@@ -1,12 +1,10 @@
-<!DCOTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
-
 </head>
 <body>
     <header>
@@ -21,24 +19,28 @@
     </header>
     <main>
         <h1>Contact Me</h1>
-        <form action="#" method="POST"></form>
+        <form id="contact-form">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
-            
+
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
 
             <label for="phone">Phone Number:</label>
             <input type="tel" id="phone" name="phone" required>
 
-            <label for="comments">Comments:</label>
-            <textarea id="comments" name="comments" required></textarea>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
 
-            <button type="submit">Submit</button>
+            <button type="submit" class="button">Submit</button>
+            <button type="reset" class="button">Reset</button>
         </form>
     </main>
     <footer>
-        <p>© 2024 My Portfolio - Contact: asad.naqvi@ontariotechu.net</p>    </footer>
-    </main>
+        <p>© 2024 My Portfolio - Contact: asad.naqvi@ontariotechu.net</p>
+    </footer>
+    <script>
+        // Optional: Add any additional JavaScript for form handling if needed
+    </script>
 </body>
 </html>
