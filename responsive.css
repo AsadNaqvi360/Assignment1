@@ -42,6 +42,6 @@
 
     main {
         padding: 40px 10px;
-        padding-top: 150px; /* Ensures content isn't hidden behind the header */
+        padding-top: 250px; /* Ensures content isn't hidden behind the header */
     }
 }
