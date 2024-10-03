@@ -8,6 +8,10 @@
     footer {
         position: relative;
     }
+
+    main {
+        padding-top: 120px; /* Adds enough space below the header */
+    }
 }
 
 /* Tablet Styles */
@@ -15,8 +19,13 @@
     body {
         font-size: 18px;
     }
+
+    main {
+        padding-top: 80px; /* Adds space below the header for tablet screens */
+    }
 }
 
+/* General adjustment for screens up to 768px wide */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column; /* Stack menu items vertically on smaller screens */
@@ -33,6 +42,6 @@
 
     main {
         padding: 40px 10px;
+        padding-top: 100px; /* Ensures content isn't hidden behind the header */
     }
 }
-
