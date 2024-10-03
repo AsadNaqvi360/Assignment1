@@ -1,25 +1,31 @@
-  /* Add gradient to the body */
-  body, html {
+/* Ensure no extra margin or padding on body and html */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, #e0e0e0, #f0f0f0);
-
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
+
 
 main {
     min-height: calc(100vh - 160px); /* Adjust for the height of the header and footer */
     padding: 60px 20px; /* Keep the padding for the main content */
+    max-width: 100%; /* Prevent overflow */
+
 }
 
 
 
+/* Align the header to full width */
 header {
-    background-color: #333; /* Dark background color */
+    width: 100%;
+    background-color: #333;
     color: white;
-    padding: 10px 20px; /* Add some padding for better spacing */
-    position: fixed; /* Fix the header at the top of the page */
+    padding: 10px 0; /* Adjust to remove misalignment */
+    position: fixed;
     top: 0;
-    width: 100%; /* Make it span across the top */
-    z-index: 1000; /* Ensure the header stays above other content */
+    z-index: 1000;
 }
 
 /* Updated Header Styles */
