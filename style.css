@@ -29,10 +29,7 @@ main {
 /* Align the header to full width */
 header {
     width: 100%;
-    background-image: url('Forest.png'); /* Background image for the header */
-    background-size: cover; /* Cover the entire header area */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent tiling */
+    background-color: #333;
     color: white;
     padding: 10px 0;
     position: fixed;
@@ -81,15 +78,15 @@ main p {
 /* Footer styles */
 footer {
     width: 100%;
-    background-image: url('Forest.png'); /* Background image for the footer */
-    background-size: cover; /* Cover the entire footer area */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent tiling */
+    background-color: #333; /* Set to match the header */
     color: white;
     text-align: center;
     padding: 10px;
     position: relative; /* Change to relative */
     margin-top: 20px;
+    background-image: url('Forest.png'); /* Background image for footer */
+    background-size: cover; /* Cover the entire footer */
+    background-position: center; /* Center the image */
 }
 
 /* Form and button styling */
@@ -110,7 +107,6 @@ button {
     background-color: green; /* Action button color */
     color: white;
     border: none;
-    cursor: pointer;
 }
 
 /* Call to Action button */
@@ -255,11 +251,40 @@ button:hover {
 }
 
 /* Fade in animation */
-.fade {
+body {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
-
-.fade.show {
+body.loaded {
     opacity: 1;
+}
+
+/* About Me specific styles */
+.about-content {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align elements */
+    padding: 20px; /* Add padding for spacing */
+}
+
+.about-image {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    margin-bottom: 20px; /* Space below image */
+}
+
+.about-video {
+    max-width: 100%; /* Responsive video */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+/* Set the header background */
+header {
+    background-image: url('Forest.png'); /* Background image for header */
+    background-size: cover; /* Cover the entire header */
+    background-position: center; /* Center the image */
+    color: white; /* Text color in header */
 }
