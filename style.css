@@ -68,6 +68,7 @@ nav ul li a:hover {
 main h1 {
     font-size: 3em;
     color: #222;
+    text-align: center;
 }
 
 main p {
@@ -268,7 +269,7 @@ body.loaded {
 }
 
 .about-image {
-    max-width: 100%; /* Responsive image */
+    max-width: 50%; /* Responsive image */
     height: auto; /* Maintain aspect ratio */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
@@ -276,7 +277,7 @@ body.loaded {
 }
 
 .about-video {
-    max-width: 100%; /* Responsive video */
+    max-width: 75%; /* Responsive video */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
 }
